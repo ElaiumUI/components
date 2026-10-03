@@ -1,0 +1,29 @@
+.elaium-charmbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 8px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(200, 235, 255, 0.15) 100%);
+  backdrop-filter: blur(16px);
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0 20px rgba(0, 50, 100, 0.25);
+}
+
+.elaium-charm-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(180, 220, 255, 0.4) 100%);
+  border: 1px solid #ffffff;
+  box-shadow: inset 0 1px 2px #fff, 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.elaium-charm-item:hover, .elaium-charm-item.active {
+  background: linear-gradient(180deg, #70e1ff 0%, #0077e6 100%);
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #00e5ff, inset 0 1px 1px #fff;
+}

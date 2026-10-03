@@ -1,0 +1,21 @@
+.elaium-tooltip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-family: var(--elaium-font);
+  font-size: 12px;
+  font-weight: 600;
+  color: #002b4d;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(200, 245, 255, 0.85) 100%);
+  border: 1px solid #70e1ff;
+  border-radius: 30px;
+  box-shadow: 
+    0 6px 15px rgba(0, 180, 216, 0.35),
+    inset 0 1px 2px #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+.elaium-tooltip-icon {
+  font-size: 14px;
+}

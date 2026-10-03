@@ -1,0 +1,72 @@
+.elaium-card {
+  position: relative;
+  width: 280px;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(200, 235, 255, 0.25) 100%);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  border: 1px solid var(--elaium-glass-border);
+  border-radius: var(--elaium-radius-lg);
+  box-shadow: var(--elaium-glass-shadow), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elaium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 150, 255, 0.4), inset 0 1px 2px rgba(255, 255, 255, 1);
+}
+
+.elaium-card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(180deg, #ff9e2c 0%, #d95200 100%);
+  border-radius: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.elaium-card-image {
+  position: relative;
+  height: 120px;
+  background: linear-gradient(180deg, #00b4db 0%, #0083b0 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.elaium-card-gloss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.0) 100%);
+}
+
+.elaium-card-icon {
+  font-size: 48px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.elaium-card-title {
+  margin: 14px 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #032b4d;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.elaium-card-desc {
+  margin: 0;
+  font-size: 13px;
+  color: #1a4a6e;
+  line-height: 1.4;
+}

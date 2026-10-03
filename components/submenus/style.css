@@ -1,0 +1,62 @@
+.elaium-menu, .elaium-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  width: 200px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(200, 235, 255, 0.5) 100%);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid var(--elaium-glass-border);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 40, 90, 0.3), inset 0 1px 1px #ffffff;
+}
+
+.elaium-menu-item {
+  position: relative;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #002b4d;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.elaium-menu-item:hover {
+  background: linear-gradient(180deg, #00e5ff 0%, #0077e6 100%);
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 6px rgba(0, 119, 230, 0.4);
+}
+
+.elaium-menu-item.danger:hover {
+  background: linear-gradient(180deg, #ff6b6b 0%, #c91818 100%);
+}
+
+.elaium-menu-divider {
+  height: 1px;
+  margin: 4px 6px;
+  background: linear-gradient(90deg, transparent, rgba(0, 50, 100, 0.2), transparent);
+}
+
+.elaium-menu-item.has-submenu { position: relative; }
+
+.elaium-submenu {
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: 100%;
+  margin-left: 6px;
+}
+
+.elaium-menu-item.has-submenu:hover > .elaium-submenu {
+  display: block;
+}
+
+.elaium-arrow {
+  font-size: 9px;
+  opacity: 0.7;
+}

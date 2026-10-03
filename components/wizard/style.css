@@ -1,0 +1,52 @@
+.elaium-wizard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.elaium-wizard-step {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #003865;
+  opacity: 0.6;
+}
+
+.elaium-wizard-step.active, .elaium-wizard-step.completed { opacity: 1; }
+
+.elaium-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffffff 0%, #c0e0ff 100%);
+  border: 1px solid #0077e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 #fff;
+}
+
+.completed .elaium-step-num {
+  background: linear-gradient(180deg, #87e61e 0%, #2b7800 100%);
+  color: #fff;
+  border-color: #2b7800;
+}
+
+.elaium-wizard-line {
+  flex: 1;
+  height: 4px;
+  min-width: 30px;
+  background: rgba(0, 50, 100, 0.2);
+  border-radius: 2px;
+}
+
+.elaium-wizard-line.active {
+  background: linear-gradient(90deg, #87e61e, #00e5ff);
+}

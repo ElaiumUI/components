@@ -1,0 +1,55 @@
+.elaium-popover-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.elaium-popover {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(210, 240, 255, 0.65) 100%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--elaium-glass-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 40, 90, 0.35), inset 0 1px 1px #ffffff;
+  padding: 12px;
+  z-index: 100;
+}
+
+/* Seta/Ponta Indicadora do Popover */
+.elaium-popover-arrow {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: rgba(210, 240, 255, 0.8);
+  border-right: 1px solid var(--elaium-glass-border);
+  border-bottom: 1px solid var(--elaium-glass-border);
+}
+
+.elaium-popover-header {
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgba(0, 50, 100, 0.15);
+}
+
+.elaium-popover-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: #002b4d;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.elaium-popover-body {
+  font-size: 12px;
+  color: #003865;
+  line-height: 1.4;
+}
+
+.elaium-popover-body p {
+  margin: 0;
+}

@@ -1,0 +1,69 @@
+.elaium-player {
+  width: 320px;
+  padding: 14px;
+  background: rgba(220, 240, 255, 0.35);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  box-shadow: var(--elaium-glass-shadow);
+}
+
+.elaium-player-display {
+  padding: 10px;
+  background: linear-gradient(180deg, #001f3f 0%, #000c1a 100%);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 229, 255, 0.5);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.8);
+  margin-bottom: 12px;
+}
+
+.elaium-player-title {
+  color: #00e5ff;
+  font-size: 11px;
+  font-family: monospace;
+  text-shadow: 0 0 5px #00e5ff;
+}
+
+.elaium-player-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.elaium-player-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #104373;
+  background: linear-gradient(180deg, #62c3ff 0%, #0055b3 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 #fff, 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.elaium-player-btn.play {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #87e61e 0%, #2b7800 100%);
+  border-color: #1e5000;
+}
+
+.elaium-slider {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 8px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.elaium-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, #00e5ff 100%);
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  cursor: pointer;
+}

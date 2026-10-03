@@ -1,0 +1,55 @@
+.elaium-window
+{
+  width: 360px;
+  background: rgba(200, 235, 255, 0.35);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--elaium-glass-border);
+  border-radius: var(--elaium-radius-lg);
+  box-shadow: var(--elaium-glass-shadow), inset 0 0 15px rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+}
+
+.elaium-window-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: var(--elaium-gloss-overlay);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.elaium-window-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0d3859;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.elaium-window-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.elaium-control {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.elaium-minimize { background: linear-gradient(180deg, #ffea79, #e0a100); }
+.elaium-maximize { background: linear-gradient(180deg, #8be677, #2f9e11); }
+.elaium-close    { background: linear-gradient(180deg, #ff8b8b, #c91818); }
+
+.elaium-window-body {
+  padding: 20px;
+  color: #052338;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.4);
+}

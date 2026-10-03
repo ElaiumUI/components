@@ -1,0 +1,32 @@
+.elaium-donut {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#00e5ff calc(var(--percent) * 1%), rgba(0, 40, 80, 0.2) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 150, 255, 0.3), inset 0 0 8px rgba(255, 255, 255, 0.8);
+  padding: 8px;
+}
+
+.elaium-donut-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(200, 235, 255, 0.6) 100%);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.elaium-donut-text {
+  font-weight: 800;
+  font-size: 18px;
+  color: #003865;
+  text-shadow: 0 1px 0 #fff;
+}

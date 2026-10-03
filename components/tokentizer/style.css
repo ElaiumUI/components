@@ -1,0 +1,34 @@
+.elaium-tokenizer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #70e1ff;
+  border-radius: 12px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.elaium-token {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #003865;
+  background: linear-gradient(180deg, #ffffff 0%, #b3e5ff 100%);
+  border: 1px solid #0088cc;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.elaium-token span { cursor: pointer; color: #d95200; }
+
+.elaium-tokenizer input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 12px;
+  flex: 1;
+}

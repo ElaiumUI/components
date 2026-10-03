@@ -1,0 +1,38 @@
+.elaium-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  background: rgba(0, 35, 70, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.elaium-tab {
+  padding: 8px 18px;
+  font-family: var(--elaium-font);
+  font-size: 13px;
+  font-weight: 600;
+  color: #d6f0ff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.elaium-tab:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.elaium-tab.active {
+  color: #003865;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  background: linear-gradient(180deg, #ffffff 0%, #bce3ff 100%);
+  box-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 #ffffff;
+}

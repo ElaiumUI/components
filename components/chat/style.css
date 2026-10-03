@@ -1,0 +1,49 @@
+.elaium-chat {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: var(--elaium-radius-lg);
+  border: 1px solid var(--elaium-glass-border);
+}
+
+.elaium-msg { display: flex; gap: 8px; align-items: flex-end; }
+.elaium-msg.outgoing { justify-content: flex-end; }
+
+.elaium-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #70e1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.elaium-bubble {
+  max-width: 70%;
+  padding: 10px 14px;
+  font-size: 13px;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.incoming .elaium-bubble {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f2ff 100%);
+  color: #002b4d;
+  border: 1px solid #bce3ff;
+  border-bottom-left-radius: 2px;
+}
+
+.outgoing .elaium-bubble {
+  background: linear-gradient(180deg, #00d2ff 0%, #0072ff 100%);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  border: 1px solid #0055b3;
+  border-bottom-right-radius: 2px;
+}
